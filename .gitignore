@@ -1,12 +1,20 @@
-*.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+import java.util.Scanner;
+import java.io.*;
+public class Numbers {
+        
+    
+    public static void main(String[] args) throws IOException  {
+        
+        File nums = new File("number.dat");
+		Scanner scan = new Scanner(nums);
+		
+		int s = scan.nextInt();
+	    
+		for(int k=1; k<=s;k++)
+		{
+			int oneNumber = scan.nextInt();
+			System.out.println(oneNumber);
+			
+		}
+    }
+}
